@@ -1,5 +1,5 @@
 === Chopsticks — Umami Analytics ===
-Contributors: alazanski
+Contributors: aleksejski
 Tags: analytics, umami, privacy, woocommerce, ecommerce
 Requires at least: 6.0
 Tested up to: 6.7
