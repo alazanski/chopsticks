@@ -103,20 +103,17 @@ class Chopsticks_Admin {
 	}
 
 	public function field_website_id() {
-		$val = esc_attr( $this->get( 'website_id' ) );
-		echo '<input type="text" name="chopsticks_settings[website_id]" value="' . $val . '" class="regular-text" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">';
+		echo '<input type="text" name="chopsticks_settings[website_id]" value="' . esc_attr( $this->get( 'website_id' ) ) . '" class="regular-text" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">';
 		echo '<p class="description">' . esc_html__( 'Your Umami website UUID. Found in Umami under Settings → Websites.', 'chopsticks' ) . '</p>';
 	}
 
 	public function field_script_url() {
-		$val = esc_attr( $this->get( 'script_url', 'https://cloud.umami.is/script.js' ) );
-		echo '<input type="url" name="chopsticks_settings[script_url]" value="' . $val . '" class="regular-text">';
+		echo '<input type="url" name="chopsticks_settings[script_url]" value="' . esc_attr( $this->get( 'script_url', 'https://cloud.umami.is/script.js' ) ) . '" class="regular-text">';
 		echo '<p class="description">' . esc_html__( 'Umami Cloud: https://cloud.umami.is/script.js — Self-hosted: your own script URL.', 'chopsticks' ) . '</p>';
 	}
 
 	public function field_domains() {
-		$val = esc_attr( $this->get( 'domains' ) );
-		echo '<input type="text" name="chopsticks_settings[domains]" value="' . $val . '" class="regular-text" placeholder="example.com,www.example.com">';
+		echo '<input type="text" name="chopsticks_settings[domains]" value="' . esc_attr( $this->get( 'domains' ) ) . '" class="regular-text" placeholder="example.com,www.example.com">';
 		echo '<p class="description">' . esc_html__( 'Comma-separated list of domains to track. Leave empty to track all domains.', 'chopsticks' ) . '</p>';
 	}
 
